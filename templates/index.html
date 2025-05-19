@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Quality Analyzer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .container {
+            max-width: 900px;
+            margin-top: 2rem;
+        }
+        .result-container {
+            display: none;
+            margin-top: 2rem;
+        }
+        .loading {
+            display: none;
+            text-align: center;
+            margin: 2rem 0;
+        }
+        .exceeded {
+            background-color: rgba(255, 200, 200, 0.3);
+        }
+        th {
+            position: sticky;
+            top: 0;
+            background-color: white;
+        }
+        .table-container {
+            max-height: 400px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mb-4 text-center">Water Quality Analyzer</h1>
+        <p class="text-center">Enter your country code and postal code to analyze water quality in your area</p>
+        
+        <div class="card p-4 shadow-sm">
+            <form id="analyzeForm">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="countryCode" class="form-label">Country Code (e.g., CH, FR, DE)</label>
+                        <input type="text" class="form-control" id="countryCode" name="country_code" required maxlength="2">
+                        <div class="form-text">ISO country code (2 letters)</div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="postalCode" class="form-label">Postal Code</label>
+                        <input type="text" class="form-control" id="postalCode" name="postal_code" required>
+                    </div>
+                </div>
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-primary">Analyze Water Quality</button>
+                </div>
+            </form>
+        </div>
+        
+        <div class="loading" id="loadingIndicator">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <p class="mt-2">Fetching and analyzing water quality data...</p>
+        </div>
+        
+        <div class="result-container" id="resultContainer">
+            <div class="alert alert-primary">
+                <h4> Nearest Monitoring Station</h4>
+                <p><strong>Name:</strong> <span id="stationName"></span></p>
+                <p><strong>Water Body:</strong> <span id="waterBody"></span></p>
+                <p><strong>Distance:</strong> <span id="distance"></span> km</p>
+            </div>
+            
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h4> Water Quality Summary</h4>
+                </div>
+                <div class="card-body">
+                    <p><strong>Total contaminants analyzed:</strong> <span id="totalContaminants"></span></p>
+                    <p><strong>Contaminants exceeding limits:</strong> <span id="exceedingContaminants"></span></p>
+                </div>
+            </div>
+            
+            <div class="card mb-4" id="exceededCard">
+                <div class="card-header bg-warning">
+                    <h4> Contaminants Exceeding Limits</h4>
+                </div>
+                <div class="card-body table-container">
+                    <table class="table table-striped" id="exceededTable">
+                        <thead>
+                            <tr>
+                                <th>Contaminant</th>
+                                <th>Value (ug/L)</th>
+                                <th>Limit (ug/L)</th>
+                                <th>Times Exceeded</th>
+                            </tr>
+                        </thead>
+                        <tbody id="exceededBody">
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <h4> All Contaminants</h4>
+                </div>
+                <div class="card-body table-container">
+                    <table class="table table-striped" id="allContaminantsTable">
+                        <thead>
+                            <tr>
+                                <th>Contaminant</th>
+                                <th>Value (ug/L)</th>
+                                <th>Limit (ug/L)</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="allContaminantsBody">
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        <div class="alert alert-danger mt-4 d-none" id="errorMessage">
+            
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const analyzeForm = document.getElementById('analyzeForm');
+            const loadingIndicator = document.getElementById('loadingIndicator');
+            const resultContainer = document.getElementById('resultContainer');
+            const errorMessage = document.getElementById('errorMessage');
+            const exceededCard = document.getElementById('exceededCard');
+            
+            analyzeForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+                
+                // Hide any previous results or errors
+                resultContainer.style.display = 'none';
+                errorMessage.classList.add('d-none');
+                
+                // Show loading indicator
+                loadingIndicator.style.display = 'block';
+                
+                // Get form data
+                const formData = new FormData(analyzeForm);
+                
+                // Send request
+                fetch('/analyze', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => response.json())
+                .then(data => {
+                    // Hide loading indicator
+                    loadingIndicator.style.display = 'none';
+                    
+                    if (data.success) {
+                        // Show results
+                        displayResults(data);
+                        resultContainer.style.display = 'block';
+                    } else {
+                        // Show error message
+                        errorMessage.textContent = data.message;
+                        errorMessage.classList.remove('d-none');
+                    }
+                })
+                .catch(error => {
+                    // Hide loading indicator
+                    loadingIndicator.style.display = 'none';
+                    
+                    // Show error message
+                    errorMessage.textContent = 'An error occurred while processing your request. Please try again.';
+                    errorMessage.classList.remove('d-none');
+                    console.error('Error:', error);
+                });
+            });
+            
+            function displayResults(data) {
+                // Display station info
+                document.getElementById('stationName').textContent = data.station.name;
+                document.getElementById('waterBody').textContent = data.station.water_body;
+                document.getElementById('distance').textContent = data.station.distance_km;
+                
+                // Display contaminants summary
+                document.getElementById('totalContaminants').textContent = data.contaminants.total_count;
+                document.getElementById('exceedingContaminants').textContent = data.contaminants.exceeding_count;
+                
+                // Display exceeded contaminants
+                const exceededBody = document.getElementById('exceededBody');
+                exceededBody.innerHTML = '';
+                
+                if (data.contaminants.exceeding_count > 0) {
+                    exceededCard.style.display = 'block';
+                    data.contaminants.exceeded.forEach(contaminant => {
+                        const row = document.createElement('tr');
+                        row.innerHTML = `
+                            <td>${capitalizeFirstLetter(contaminant.name)}</td>
+                            <td>${contaminant.value}</td>
+                            <td>${contaminant.limit}</td>
+                            <td>${contaminant.times_exceeded}x</td>
+                        `;
+                        exceededBody.appendChild(row);
+                    });
+                } else {
+                    exceededCard.style.display = 'none';
+                }
+                
+                // Display all contaminants
+                const allContaminantsBody = document.getElementById('allContaminantsBody');
+                allContaminantsBody.innerHTML = '';
+                
+                data.contaminants.all.forEach(contaminant => {
+                    const row = document.createElement('tr');
+                    if (contaminant.exceeds) {
+                        row.classList.add('exceeded');
+                    }
+                    
+                    const status = contaminant.exceeds ? 
+                        '<span class="badge bg-danger">Exceeds Limit</span>' : 
+                        '<span class="badge bg-success">Safe</span>';
+                    
+                    row.innerHTML = `
+                        <td>${capitalizeFirstLetter(contaminant.name)}</td>
+                        <td>${contaminant.value !== null ? contaminant.value : 'N/A'}</td>
+                        <td>${contaminant.limit !== null ? contaminant.limit : 'N/A'}</td>
+                        <td>${contaminant.limit !== null ? status : '<span class="badge bg-secondary">No Threshold Data</span>'}</td>
+                    `;
+                    allContaminantsBody.appendChild(row);
+                });
+            }
+            
+            function capitalizeFirstLetter(string) {
+                return string.charAt(0).toUpperCase() + string.slice(1);
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+contaminant,cas_code,limit_ug_L,source,notes
+Nitrate,14797-55-8,50000.0,EU DWD,50 mg/L = 50000 µg/L
+Nitrite,14797-65-0,200.0,EU DWD,0.2 mg/L = 200 µg/L
+Lead,7439-92-1,10.0,EU DWD,Toxic heavy metal
+Mercury,7439-97-6,1.0,EU DWD,"Highly toxic, neurotoxic"
+Cadmium,7440-43-9,5.0,EU DWD,Heavy metal
+Arsenic,7440-38-2,10.0,EU DWD,Carcinogenic
+Phenanthrene,85-01-8,100.0,EU DWD (PAHs),Limit applies to total PAHs
+Atrazine,1912-24-9,0.1,EU DWD,Pesticide
+Benzene,71-43-2,1.0,EU DWD,Volatile organic compound
+Fluoride,16984-48-8,1500.0,EU DWD,1.5 mg/L = 1500 µg/L
+Selenium,7782-49-2,10.0,WHO,"Essential trace element, toxic in excess"
+Chromium,7440-47-3,50.0,EU DWD,Total chromium
+Copper,7440-50-8,2000.0,EU DWD,2 mg/L = 2000 µg/L
+Nickel,7440-02-0,20.0,EU DWD,Skin sensitizer
+Iron,7439-89-6,200.0,EU DWD,Aesthetic parameter
+Manganese,7439-96-5,50.0,EU DWD,Aesthetic parameter
+Pesticides (total),NA,500.0,EU DWD,Sum of all detected pesticides
+PAHs (total),NA,100.0,EU DWD,"Includes benzo(a)pyrene, etc."
+"1,1-Dichloroethane",    107-06-2,3.0,EWG,"Includes benzo(a)pyrene, etc."

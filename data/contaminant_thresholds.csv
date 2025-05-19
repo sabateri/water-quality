@@ -1,0 +1,115 @@
+contaminant,cas_code,limit_us,units_us,notes,continent_us
+"1,1-dichloroethane",75-34-3 ,3.0,ug/L,Cancer; change to the heart and blood vessels,us
+"1,1,2-trichloroethane",79-00-5 ,0.3,ug/L,Liver cancer; harm to the kidney; change to the central nervous system,us
+"1,2-dibromo-3-chloropropane",96-12-8 ,0.0017,ug/L,Testicular cancer; harm to the male reproductive system; infertility,us
+"1,2-dichloroethane",107-06-2 ,0.4,ug/L,Cancer; harm to the immune system; harm to the stomach and intestines; harm to the  liver; harm to the kidney; harm to the brain and nervous system,us
+"1,2-dichloropropane",78-87-5 ,0.5,ug/L,Liver cancer; harm to the liver; harm to the kidney; change to blood cells,us
+"1,2,3-trichloropropane",96-18-4 ,0.0007,ug/L,Cancer,us
+"1,2,4-trichlorobenzene",120-82-1 ,5.0,ug/L,Harm to the adrenal gland; cancer,us
+"1,3-butadiene",106-99-0 ,0.0103,ug/L,Cancer; harm to the brain and nervous system; harm to reproduction and child  development; change to blood cells; change to the kidney,us
+"1,4-dioxane",123-91-1 ,0.35,ug/L,Cancer; irritation of the lungs; harm to the kidney,us
+p-dichlorobenzene,,6.0,ug/L,Cancer; harm to the liver; harm to the kidney; harm to  the thyroid,us
+"2,4-d",94-75-7 ,20.0,ug/L,Hormone disruption; harm to the liver; harm to the kidney; harm to the thyroid; harm to  the brain and nervous system; change to  immune system function,us
+aluminum,7429-90-5 ,600.0,ug/L,Harm to the brain and nervous system,us
+antimony,7440-36-0 ,1.0,ug/L,Harm to the liver; change to the stomach and intestines,us
+arsenic,7440-38-2 ,0.004,ug/L,"Cancer; harm to the central nervous system; harm to the brain and nervous system; skin  damage; change to  the heart and blood vessels; increase the risk of heart disease, stroke and diabetes",us
+atrazine,1912-24-9 ,0.1,ug/L,Harm to the developing fetus; hormone disruption; harm to the reproductive system;  changes in the nervous system; changes in brain and behavior; cancer,us
+barium,7440-39-3 ,700.0,ug/L,Harm to the kidney; high blood pressure; harm to the heart and blood vessels,us
+benzene,,0.15,ug/L,Cancer; harm to blood cells; harm to the central nervous system; harm to child  development; harm to the immune system,us
+benzoapyrene,50-32-8 ,0.007,ug/L,Cancer; harm to the immune system; harm to reproduction and child development; change to  the central nervous system,us
+beryllium,7440-41-7 ,1.0,ug/L,Harm to the stomach and intestines; harm to the lungs; harm to bones,us
+bromate,,0.1,ug/L,Cancer,us
+bromochloroaceticacid,,0.02,ug/L,Cancer; harm to fetal growth and development.,us
+bromodichloroaceticacid,,0.04,ug/L,Cancer; harm to fetal growth and development.,us
+bromodichloromethane,,0.06,ug/L,Cancer; harm to reproduction and child development;  change to fetal growth and development,us
+bromoform,75-25-2 ,0.5,ug/L,Cancer; harm to reproduction and child development;  change to fetal growth and development,us
+cadmium,7440-43-9 ,0.04,ug/L,Cancer; harm to the kidney; change in behavior,us
+carbofuran,1563-66-2 ,0.7,ug/L,Harm to the brain and nervous system; harm to the reproductive system,us
+carbontetrachloride,,0.1,ug/L,Cancer; harm to the liver; harm to the central nervous system; harm to the kidney;  decrease in fertility,us
+chlorate,,210.0,ug/L,Hormone disruption,us
+chlordane,57-74-9 ,0.03,ug/L,Cancer; hormone disruption; harm to reproduction and child development,us
+chlordane,57-74-9,0.03,ug/L,Cancer; hormone disruption; harm to reproduction and child development,us
+chlorodibromoaceticacid,,0.02,ug/L,Cancer; harm to fetal growth and development,us
+chlorite,,50.0,ug/L,Change to blood cells; change to the thyroid; hormone disruption; harm to reproduction  and child development,us
+chloroform,67-66-3 ,0.4,ug/L,Cancer; harm to fetal growth and development,us
+chloromethane,74-87-3 ,2.69,ug/L,Cancer,us
+chromium,7440-47-3 ,0.02,ug/L,Cancer; harm to the liver; harm to the reproductive system,us
+cobalt,7440-48-4 ,70.0,ug/L,Harm to the heart; change in blood chemistry; harm to the stomach and intestines,us
+copper,7440-50-8 ,300.0,ug/L,Diarrhea; weight loss; vomiting,us
+cyanide,,150.0,ug/L,Harm to the brain and nervous system; harm to the thyroid; harm to the central nervous  system,us
+diadipate,,200.0,ug/L,Change to fetal growth and development; harm to the liver,us
+diphthalate,,3.0,ug/L,Harm to the male reproductive system; harm to the immune system; change to fetal growth  and development; hormone disruption,us
+dibromoaceticacid,,0.03,ug/L,Cancer; harm to fetal growth and development,us
+dibromochloromethane,,0.1,ug/L,Cancer; harm to fetal growth and development,us
+dichloroaceticacid,,0.2,ug/L,Cancer; harm to reproduction and child development,us
+p-dichlorobenzene,,6.0,ug/L,Cancer; harm to the liver; harm to the kidney; harm to the thyroid,us
+dichloromethane,75-09-2 ,4.0,ug/L,Cancer; harm to reproduction and child development; harm to the liver,us
+diquat,85-00-7 ,6.0,ug/L,Change to fetal growth and development; change in body weight; harm to the kidney;  cataracts,us
+diquat,2764-72-9 ,6.0,ug/L,Change to fetal growth and development; change in body weight; harm to the kidney;  cataracts,us
+endothall,145-73-3 ,94.0,ug/L,Change to the stomach and intestines; eye damage; skin irritation,us
+endrin,72-20-8 ,0.3,ug/L,Cancer; change to the central nervous system; harm to the immune system; harm to the  reproductive system,us
+ethylbenzene,100-41-4 ,300.0,ug/L,Cancer; harm to the lungs; harm to the liver; harm to the kidney; change to the central  nervous system,us
+ethylenedibromide,,0.01,ug/L,Cancer; harm to the reproductive system; harm to the central nervous system; change to  fetal growth and development,us
+glyphosate,,5.0,ug/L,Cancer; harm to fetal growth; harm to  the kidney,us
+haloaceticacids,,0.1,ug/L,Cancer; harm to fetal growth and development,us
+heptachlor,76-44-8 ,0.008,ug/L,Cancer; hormone disruption; harm to the brain and nervous system,us
+heptachlorepoxide,,0.006,ug/L,Cancer; hormone disruption; harm to the liver,us
+hexachlorobenzene,118-74-1 ,0.03,ug/L,Cancer; harm to the brain and nervous system; hormone disruption,us
+hexachlorocyclopentadiene,77-47-4 ,2.0,ug/L,Harm to the stomach and intestines; change to the liver; change to the kidney;  irritation of the lungs,us
+hexafluoropropyleneoxidedimeracid,,0.009,ug/L,Harm to the liver,us
+lead,7439-92-1 ,0.2,ug/L,Harm to the brain and nervous system,us
+lindane,58-89-9 ,0.032,ug/L,Cancer; harm to the brain and nervous system; harm to the immune system,us
+manganese,7439-96-5 ,100.0,ug/L,Harm to the brain and nervous system; change in behavior,us
+mercury,7439-97-6 ,1.2,ug/L,Harm to the brain and nervous system; harm to fetal growth and child development; harm  to the kidney; harm to the immune system,us
+methoxychlor,72-43-5 ,0.09,ug/L,Hormone disruption; harm to the reproductive system; harm to the kidney; harm to the  liver; harm to the immune system; harm to the brain and nervous system,us
+molybdenum,,40.0,ug/L,Change in blood chemistry; gout,us
+monobromoaceticacid,,25.0,ug/L,Change to fetal growth and development,us
+monochloroaceticacid,,53.0,ug/L,Change to fetal growth and development,us
+monochlorobenzene,,70.0,ug/L,Harm to the liver; harm to the kidney,us
+mtbe,,13.0,ug/L,Cancer,us
+n-nitrosodimethylamine,62-75-9 ,0.003,ug/L,Cancer,us
+nitrate,,140.0,ug/L,Cancer; harm to fetal growth and child development,us
+oxamyl,23135-22-0 ,26.0,ug/L,Harm to the central nervous system; harm to the brain and  nervous system; harm to child development,us
+pentachlorophenol,87-86-5 ,0.3,ug/L,Cancer; harm to child development; harm to the immune system; hormone disruption,us
+perchlorate,,1.0,ug/L,Hormone disruption; harm to fetal growth and child development,us
+perfluorobutanesulfonate,,2.0,ug/L,Hormone disruption; harm to fetal growth and child development,us
+perfluorobutanoicacid,,1.0,ug/L,Harm to fetal growth and child development,us
+perfluorodecanoicacid,,6e-06,ug/L,Harm to the immune system; harm to fetal growth and child development,us
+perfluorodecanesulfonicacid,,1e-06,ug/L,Harm to the developing immune system,us
+perfluorododecanoicacid,,6e-06,ug/L,Harm to the immune system; harm to fetal growth and child development,us
+perfluoroheptanoicacid,,1.0,ug/L,Harm to fetal growth and child development,us
+perfluoroheptanesulfonicacid,,1e-06,ug/L,Harm to the developing immune system,us
+perfluorohexanesulfonate,,1e-06,ug/L,Harm to the developing immune system,us
+perfluorohexanoicacid,,1.0,ug/L,Harm to fetal growth and child development,us
+perfluorononanoicacid,,0.006,ug/L,Harm to the immune system; harm to fetal growth and child development,us
+perfluorooctanesulfonate,,0.0003,ug/L,Cardiovascular harm; harm to fetal growth,us
+perfluorooctanesulfonamide,,0.0003,ug/L,Cardiovascular harm; harm to fetal growth,us
+perfluorooctanoicacid,,8.999999999999999e-05,ug/L,Harm to the immune system; harm to fetal growth and child development; increased  cholesterol,us
+perfluoropentanoicacid,,1.0,ug/L,Harm to fetal growth and child development,us
+perfluorotetradecanoicacid,,6e-06,ug/L,Harm to the immune system; harm to fetal growth and child development,us
+perfluorotridecanoicacid,,6e-06,ug/L,Harm to the immune system; harm to fetal growth and child development,us
+perfluoroundecanoicacid,,6e-06,ug/L,Harm to the immune system; harm to fetal growth and child development,us
+picloram,1918-02-1,166.0,ug/L,Harm to the liver; harm to the kidney; change to the reproductive system,us
+polychlorinatedbiphenyls,,0.09,ug/L,Breast cancer; prostate cancer; harm to the brain and nervous system; hormone  disruption; harm to the immune system,us
+radium-226,,0.05,pCi/L,Cancer,us
+radium-228,,0.019,pCi/L,Cancer,us
+selenium,7782-49-2 ,30.0,ug/L,Hormone disruption; harm to child development; harm to the brain and nervous system;  skin damage,us
+simazine,122-34-9 ,0.1,ug/L,Harm to the developing fetus; hormone disruption; harm to the reproductive system;  changes in the nervous system; changes in brain and behavior; cancer,us
+strontium,,1500.0,ug/L,Harm to bones,us
+strontium-90,,0.35,pCi/L,Cancer; harm to bones,us
+styrene,100-42-5 ,0.5,ug/L,Cancer; harm to the liver; harm to the brain and nervous system,us
+tetrachloroethylene,127-18-4 ,0.06,ug/L,Lung cancer; breast cancer; colon cancer; harm to the kidney; harm to the liver; harm to  the central nervous system,us
+thallium,7440-28-0 ,0.1,ug/L,Hair loss; harm to the liver; harm to the  central nervous system; harm to the brain  and nervous system; harm to the male reproductive system,us
+toluene,108-88-3 ,150.0,ug/L,Harm to the brain and nervous system; harm to the liver; harm to the immune system; harm  to the reproductive system; harm to fetal growth and development,us
+totaltrihalomethanes,,0.15,ug/L,Bladder cancer; skin cancer; harm to fetal growth and development,us
+toxaphene,8001-35-2 ,0.03,ug/L,Cancer; harm to the brain and nervous system; harm to the liver; harm to the kidney;  hormone disruption,us
+tribromoaceticacid,,0.04,ug/L,Change to fetal growth and development,us
+trichloroaceticacid,,0.1,ug/L,Cancer; harm to reproduction and child development,us
+trichloroethylene,79-01-6 ,0.4,ug/L,Cancer; change to fetal growth and development; harm to the liver; harm to the kidney,us
+trichlorofluoromethane,75-69-4 ,1300.0,ug/L,Harm to the liver; change to the central nervous system; harm to the heart and blood  vessels,us
+trichlorotrifluoroethane,,4000.0,ug/L,Harm to the liver; change to the central nervous system; harm to the heart and blood  vessels,us
+tritium,,400.0,pCi/L,Cancer,us
+uranium,,0.43,pCi/L,Cancer; harm to the kidney,us
+vanadium,7440-62-2 ,21.0,ug/L,Change in blood chemistry; harm to reproduction and child development,us
+vinylchloride,,0.05,ug/L,Liver cancer; harm to the liver; change to the central nervous system,us
+xylenes,,1800.0,ug/L,Harm to the brain and nervous system; change to the central nervous system; change to  fetal growth and development,us
