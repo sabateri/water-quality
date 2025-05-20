@@ -57,7 +57,7 @@ Follow steps 1. from the previous section  ```Getting Started```, then
     Open your browser and navigate to http://127.0.0.1:5000/ to interact with the visualizations.
 
 
-## Todo
+## Future Improvements
 - Add health info for each contaminant
 - Cache results for a given country
 - Add a map
