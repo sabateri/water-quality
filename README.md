@@ -16,7 +16,8 @@ The contaminant thresholds are taken from the [ECHA](https://echa.europa.eu/qual
 
 The extracted thresholds from the ECHA and EWG look as follows
 ![thresholds](images/US_EU_contaminants.png)
-We can see that the in most cases, the EU sets stricter thresholds for water contaminants compared to the US.
+
+We can see that in most cases, the EU sets stricter thresholds for water contaminants compared to the US.
 
 
 ## Getting Started
@@ -57,7 +58,6 @@ Follow steps 1. from the previous section  ```Getting Started```, then
 
 
 ## Todo
-- Add health advice for each contaminant
-- Check that I have all EU contaminants (take care fo nitrates, nitrites)
-- Add a map?
+- Add health info for each contaminant
 - Cache results for a given country
+- Add a map
